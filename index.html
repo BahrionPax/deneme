@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="Css/Style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Marka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <!-- İlk kutu -->
+            <div class="col-md-4 mb-4">
+                <div class="custom-box">
+                    <img src="images/hub.jpg" alt="Hub Resmi" class="img-fluid custom-image">
+                    <div class="info-box">
+                        <p>Bu ürünü satın almak isteer misiniz?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- İkinci kutu -->
+            <div class="col-md-4 mb-4">
+                <div class="custom-box">
+                    <img src="images/hub_ve_switch.jpg" alt="Hub ve Switch Resmi" class="img-fluid custom-image">
+                    <div class="info-box">
+                        <p>Bu ürünü satın almak isteer misiniz?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Üçüncü kutu -->
+            <div class="col-md-4 mb-4">
+                <div class="custom-box ">
+                    <img src="images/istockphoto-495732397-612x612.jpg" alt="İstock Resmi" class="img-fluid custom-image">
+                    <div class="info-box">
+                        <p c>Bu ürünü satın almak isteer misiniz?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bilmek isteyeceğiniz</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Okumanız gereken</button>
+
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Modem, "modülasyon" ve "demodülasyon" kelimelerinin birleşiminden türetilmiş bir terimdir. Temelde, dijital sinyalleri analog sinyallere dönüştürmek ve analog sinyalleri dijital sinyallere geri çevirmek için kullanılan bir cihazdır. İnternet bağlantısı, telefon hatları veya kablolu bağlantılar gibi analog iletim ortamlarında dijital verilerin iletilmesini sağlar.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Modemler, internet servis sağlayıcıları tarafından kullanıcılara sağlanabilir ya da kullanıcılar kendileri bir modem satın alarak kendi internet bağlantılarını kurabilir.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Ürün ve Hizmetlerimiz</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Ürün</th>
+                    <th scope="col">Açıklama</th>
+                    <th scope="col">Fiyat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Modem</td>
+                    <td>Yüksek hızlı internet bağlantısı sağlar.</td>
+                    <td>₺500</td>
+                </tr>
+                <tr>
+                    <td>Switch</td>
+                    <td>Ağ cihazları arasındaki iletişimi yönetir.</td>
+                    <td>₺300</td>
+                </tr>
+                <tr>
+                    <td>Hub</td>
+                    <td>Temel ağ bağlantısı sağlar.</td>
+                    <td>₺200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Bize Ulaşın</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Adınız</label>
+                <input type="text" class="form-control" id="name" placeholder="Adınızı girin">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-posta</label>
+                <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mesajınız</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Mesajınızı yazın"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Sıkça Sorulan Sorular</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Modem nedir?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Modem, dijital sinyalleri analog sinyallere dönüştürerek internet bağlantısı sağlar.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Switch nedir?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Switch, bir ağ içerisindeki cihazların birbirleriyle iletişim kurmasını sağlayan bir cihazdır.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

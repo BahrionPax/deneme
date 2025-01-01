@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Donanım</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Oyun.html">Oyun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İletişim Bölümü -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">İletişim</h1>
+        <p class="lead text-center">
+            Bizimle iletişime geçmek için aşağıdaki formu doldurabilir ya da doğrudan iletişim bilgilerimizden bize ulaşabilirsiniz.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Bize Ulaşın</h3>
+                <p>
+                    Aşağıdaki iletişim bilgilerini kullanarak bize ulaşabilirsiniz:
+                </p>
+                <ul>
+                    <li><strong>Adres:</strong> 123 Teknoloji Caddesi, Donanım Şehri</li>
+                    <li><strong>Telefon:</strong> +90 123 456 78 90</li>
+                    <li><strong>E-posta:</strong> bilgi@donanim.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>İletişim Formu</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Adınız</label>
+                        <input type="text" class="form-control" id="name" placeholder="Adınızı girin">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-posta</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mesajınız</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Mesajınızı buraya yazın"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harita ve Sosyal Medya -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Bizi Ziyaret Edin</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Konumumuz</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192983577177!2d-122.41941568468118!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2fbd3b3b%3A0x6c3e8aef5d5e8a5a!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1640188413625!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <h4>Sosyal Medya</h4>
+                <p>Bizi sosyal medyada takip edin:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 Donanım. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

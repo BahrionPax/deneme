@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oyun</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Css/Style.css">
+    
+    <style>
+        #randomDiv {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        #gameContainer {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Oyun alanının boyutunu belirle */
+            margin-top: 20px; /* Navbar ile arayı aç */
+            border: 2px dashed #ccc; /* Çerçeve */
+            overflow: hidden; /* Div'in dışına taşmasını önle */
+        }
+    </style>
+    
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Donanım</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Oyun.html">Oyun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Game Container -->
+    <div class="container text-center mt-5">
+        <h1 class="mb-4 text-bg-primary p-3">Oyun Sayfası</h1>
+        <p class="lead">Fareyi kırmızı kutunun üzerine getirerek hareket etmesini sağlayabilirsiniz!</p>
+
+        <!-- Random Moving Div Container -->
+        <div id="gameContainer">
+            <div id="randomDiv">Bana Tıkla</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JavaScript for random movement -->
+    <script>
+        const randomDiv = document.getElementById('randomDiv');
+        const gameContainer = document.getElementById('gameContainer');
+
+        randomDiv.addEventListener('mouseover', () => {
+            // Container boyutlarını al
+            const containerWidth = gameContainer.offsetWidth;
+            const containerHeight = gameContainer.offsetHeight;
+
+            // Yeni rastgele koordinatlar oluştur
+            const randomX = Math.random() * (containerWidth - randomDiv.offsetWidth);
+            const randomY = Math.random() * (containerHeight - randomDiv.offsetHeight);
+
+            // Div'in yeni konumunu ayarla
+            randomDiv.style.left = `${randomX}px`;
+            randomDiv.style.top = `${randomY}px`;
+        });
+    </script>
+
+</body>
+</html>
